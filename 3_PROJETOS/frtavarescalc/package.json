@@ -1,0 +1,17 @@
+{
+  "name": "frtavarescalc",
+  "version": "1.4.0",
+  "description": "Calculadora de Teste de publicacao pacote npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.test.js",
+    "prepublishOnly": "npm run test"
+  },
+  "keywords": [
+    "calc",
+    "sum",
+    "multiplication"
+  ],
+  "author": "Fabiana <fabi.tavares1@gmail.com> (http://www.frtavares.com.br/)",
+  "license": "MIT"
+}

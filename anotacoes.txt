@@ -1,0 +1,61 @@
+comando para verificar pacotes desatualiados e/ou com vulnerabilidades.
+npm outdated
+
+comando para limpar da pasta node_modules pacotes que foram removidos na mão da dependencies do package.json
+npm prune
+
+comando para listar pacotes globais de maneira rasa
+npm list -g --depth=0
+
+comando para instalar pacotes globalmente (exemplo pacote request)
+ npm install request -g
+
+um utilitário e linha de comando que cria links simbólicos, os famosos atalhos, de um módulo para outro (exemplo pacote request)
+npm link request
+
+comando para remover um pacote globalmente (exemplo pacote request)
+npm remove request -g
+
+comando para procurar pacotes pela linha de comando (exemplo pacote react)
+npm search react
+
+comando para verificar cache
+npm cache verify
+
+comando para limpar cache
+npm cache clean --force
+
+Reduz duplicidade de dependencias.
+npm dedupe
+
+Instala um pacote se salvar no package.json, não mostra na lista de dependencias.
+utlizar a dependencia como um teste.
+npm install axios --no-save
+
+----------------------------------------------
+
+Para publicar um pacote:
+1 - Crie seu pacote e codifique normalmente.
+2 - realize login do npm aqui na linha de comando dentro da pasta do projeto,  comando:
+npm login
+preencher username, password, email
+3 - para publicar rodar o comando:
+npm publish
+
+Atualizar versão de um modulo (pacote):
+1 - Basta trocar a versão semantica no package.json e depois rodar:
+npm publish
+
+Para atualizar uma versão de pacote já instalado no meu projeto:
+npm update
+
+mostra scripts mapeados no pacote
+npm run
+
+incluir prepublish no package.json, vai dar erro antes de subir.
+"scripts": {
+  "test": "node index.test.js",
+  "prepublishOnly": "npm run test"
+},
+
+--------------------------------------------------------------------
